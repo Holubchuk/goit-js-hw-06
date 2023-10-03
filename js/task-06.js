@@ -3,8 +3,10 @@ const dataLength = parseInt(textInput.getAttribute('data-length'));
 
 textInput.addEventListener("blur", (event) => {
     if (textInput.value.length === dataLength) {
-        textInput.style.borderColor = '#4caf50';
+        textInput.classList.add('valid');
+        textInput.classList.remove('invalid');
     } else {
-        textInput.style.borderColor = '#f44336';
+        textInput.classList.remove('valid');
+        textInput.classList.add('invalid');
     }
 });
