@@ -12,4 +12,8 @@ btn.addEventListener("click", () => {
   const randomColor = getRandomHexColor();
   body.style.backgroundColor = randomColor;
   outputColor.textContent = randomColor;
+  
+  // Сподіваюся це не буде помилкою)
+  btn.style.backgroundColor = randomColor;
+  btn.style.border = "none";
 })
